@@ -33,6 +33,7 @@ And a few more:
     $ find /etc 1> files.etc.out 2> files.etc.err
     $ find /etc &> files.etc.merged
     $ find /etc 2>> files.etc.err.log
+    $ cat > services.copy < /etc/services
 
 We can even emulate a traditional open, read, close:
 
