@@ -41,3 +41,27 @@ We can even emulate a traditional open, read, close:
     $ exec 3<> file
     $ grep http <&3
     $ exec 3>&-
+
+# Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2
+
+SELinux attributes can be archived using star:
+
+    $ star cvf etc.tar -xattr -H=exustar /etc
+
+    $ Log in and switch users in multiuser targets
+
+List logged in users with:
+
+    $ w
+
+Get last login times for all users with (utmp):
+
+    $ lastlog
+
+List historical logins and system reboots (from wtmp):
+
+    $ last
+
+List failed logins (from btmp):
+
+    $ lastb
